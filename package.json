@@ -1,0 +1,27 @@
+{
+    "name": "pi-movies",
+    "version": "0.0.0",
+    "description": "A database and api service for movies hosted on a raspberry pi.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.4"
+    },
+    "engines": {
+        "node": "8.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/feluelle/pi-movies"
+    },
+    "keywords": [
+      "movies",
+      "raspberry pi",
+      "database",
+      "api"
+    ],
+    "author": "Felix Uellendall",
+    "license": "MIT"
+  }
