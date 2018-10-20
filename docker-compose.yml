@@ -2,21 +2,19 @@ version: '3'
 services:
     movieapi:
         build: .
-        container_name: movieapi
         image: movieapi
+        container_name: movieapi
+        restart: always
         ports:
             - "49160:8080"
-    #     links:
-    #         - moviedb
-    #     depends_on:
-    #         - moviedb
-    # moviedb:
-    #     image: mongo:latest
-    #     container_name: moviedb
-    #     environment:
-    #       - MONGO_DATA_DIR=/data/db
-    #       - MONGO_LOG_DIR=/dev/null
-    #     volumes:
-    #       - ./data/db:/data/db
-    #     ports:
-    #         - 27017:27017
+        links:
+            - moviedb
+        depends_on:
+            - moviedb
+    moviedb:
+        image: mongo
+        container_name: moviedb
+        # volumes:
+        #   - ./data:/data/db
+        ports:
+            - "27017:27017"
