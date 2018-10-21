@@ -14,7 +14,7 @@ services:
         depends_on:
             - moviedb
     moviedb:
-        image: andresvidal/rpi3-mongodb3:3.0.14
+        image: andresvidal/rpi3-mongodb3 # based on mongo version 3.0.14
         container_name: moviedb
         # volumes:
         #   - ./data:/data/db
