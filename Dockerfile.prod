@@ -1,4 +1,6 @@
-FROM node:8
+FROM resin/raspberry-pi-node:8
+
+ENV INITSYSTEM on
 
 WORKDIR /usr/src/app
 

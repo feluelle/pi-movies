@@ -1,9 +1,12 @@
 version: '3'
 services:
     movieapi:
-        build: .
+        build: 
+            context: .
+            dockerfile: Dockerfile.prod
         image: movieapi
         container_name: movieapi
+        restart: always
         ports:
             - "49160:8080"
         links:
@@ -11,7 +14,7 @@ services:
         depends_on:
             - moviedb
     moviedb:
-        image: mongo:3.0.14
+        image: andresvidal/rpi3-mongodb3:3.0.14
         container_name: moviedb
         # volumes:
         #   - ./data:/data/db
