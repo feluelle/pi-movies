@@ -31,7 +31,7 @@ app.post('/movies', (req, res) => {
   })
 })
 
-mongodb.MongoClient.connect('mongodb://moviedb:27017/moviedb', (err, client) => {
+mongodb.MongoClient.connect('mongodb://moviedb:27017/moviedb', { useNewUrlParser: true }, (err, client) => {
   if (err) return console.log(err)
   moviedb = client.db('moviedb')
   app.listen(PORT, HOST, () => {
