@@ -1,29 +1,37 @@
 {
-    "name": "pi-movies",
-    "version": "0.0.0",
-    "description": "A database and api service for movies hosted on a raspberry pi.",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "body-parser": "^1.18.3",
-      "express": "^4.16.4",
-      "mongodb": "^3.1.8"
-    },
-    "engines": {
-        "node": "10.0.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/feluelle/pi-movies"
-    },
-    "keywords": [
-      "movies",
-      "raspberry pi",
-      "database",
-      "api"
-    ],
-    "author": "Felix Uellendall",
-    "license": "MIT"
+  "name": "pi-movies",
+  "version": "0.0.0",
+  "description": "A database and api service for movies hosted on a raspberry pi.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.8"
+  },
+  "engines": {
+    "node": "10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feluelle/pi-movies"
+  },
+  "keywords": [
+    "movies",
+    "raspberry pi",
+    "database",
+    "api"
+  ],
+  "author": "Felix Uellendall",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
+}
