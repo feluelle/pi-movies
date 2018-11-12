@@ -1,4 +1,5 @@
 # pi-movies
+
 A database and api service for movies :movie_camera: hosted on a raspberry pi.
 
 ## API Endpoints
@@ -8,7 +9,8 @@ A database and api service for movies :movie_camera: hosted on a raspberry pi.
 * `POST` `/movies` Adds new movies into the database.
   
   Just pass a json in the request body like
-  ```
+
+  ```json
   {
     "name": "The Movie",
     "length": 120,
