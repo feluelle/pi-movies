@@ -1,6 +1,6 @@
 # pi-movies
 
-A database and api service for movies :movie_camera: hosted on a raspberry pi.
+A database and api service for movies 🎥 hosted on a dockerized 🐳 raspberry pi.
 
 It uses [mongodb](https://www.mongodb.com/de) as backend with [express](https://expressjs.com/de/) in the front.
 
